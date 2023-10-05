@@ -31,12 +31,13 @@ public class BuscarCep {
 
 	@Then("o sistema devera  as informacoes do cep informado")
 	public void oSistemaDeveraAsInformacoesDoCepInformado() {
-		String logradouroEsperado = "Avenida dos Parques (Alphasítio)";
-		String cepEsperado = "06544-300";
-		String bairroEsperado = "Tamboré";
-		String localidadeEsperada = "Santana de Parnaíba/SP";
-		vpage.dadosEsperado(logradouroEsperado, bairroEsperado, localidadeEsperada, cepEsperado);
-		
+		// Dados Encontradados
+		String logradouroEsperada = "Avenida dos Parques (Alphasítio)";
+		String cepEsperadoEsperado = "06544-300";
+		String bairroEsperadoEsperado = "Tamboré";
+		String localidadeEsperadaEsperado = "Santana de Parnaíba/SP";
+		vpage.dadosEsperados(logradouroEsperada, bairroEsperadoEsperado, localidadeEsperadaEsperado,
+				cepEsperadoEsperado);
 	}
 
 	@Given("clicar em aceitar cookies")
